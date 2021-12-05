@@ -19,6 +19,9 @@ form {
   margin-right: 30px;
 }
 
+a {
+  color: darkblue;
+}
 span.date {
   margin-left: 30px;
   margin-right: 30px;
