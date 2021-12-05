@@ -1,3 +1,141 @@
+body {
+  margin: 10px 300px;
+}
+
 h3 {
-  color: blue;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: xx-large;
+}
+h6.card-title {
+  font-size: x-small;
+}
+
+form {
+  margin-top: 25px;
+  display: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+span.date {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+span.time {
+  margin-left: 30px;
+  margin: 30px;
+}
+
+span.windinfo {
+  margin-left: 157px;
+}
+span.feelsinfo {
+  margin-left: 63px;
+}
+span.humidityinfo {
+  margin-left: 131px;
+}
+
+span.uvindexinfo {
+  margin-left: 154px;
+}
+
+p.introfacts {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+div.factquote {
+  margin-bottom: 20px;
+}
+div.card-body-forecast {
+  margin: -2px;
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+div.card {
+  border: 2px solid white;
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.container {
+  border: 3px solid white;
+  border-radius: 12px;
+  font-family: "Architects Daughter";
+  color: white;
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.currenttemp {
+  padding: -5px;
+  padding-top: 10px;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: larger;
+}
+.enterlocationbutton {
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.searchbutton {
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: white;
+  color: #13547a;
+}
+
+.currentlocationbutton {
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: white;
+  color: #13547a;
+}
+
+.next-button {
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 5px;
+  font-size: smaller;
+  color: #13547a;
+}
+
+.mainimagecloude {
+  margin-left: 100px;
+  margin-right: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 110px;
+  padding-bottom: 15px;
+}
+
+.card-img-bottom {
+  width: 40px;
+  display: block;
+  margin: 5px auto;
+}
+
+.card-titles-weekday {
+  font-size: medium;
+  text-align: center;
+  font-weight: bolder;
+}
+.card-temperature {
+  font-size: smaller;
+  text-align: center;
+}
+.forecastrow {
+  padding-left: 39px;
+  padding-right: 39px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+  margin-top: 20px;
 }
