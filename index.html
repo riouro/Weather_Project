@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <body>
+    <div class="container">
+      <form id="location-form">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          autocomplete="off"
+          autofocus="on"
+          class="enterlocationbutton"
+          id = "text-input"
+        />
+        <input type="submit" value="search" class="searchbutton" />
+        <button type="button" class="currentlocationbutton">
+          current Location
+        </button>
+      </form>
+<br>
+      <h3 id="city-name">Stuttgart, Germany</h3>
+      <div>
+        <span class="date" id=currentDate>Sun., August 21st</span>
+        <span class="feelsinfo"> feels like: 11 °C | °F </span> 
+        <span class="humidityinfo"> humidity: 40 % </span> 
+      </div>
+      <div>
+        <span class="time" id=currentTime>19:01</span>
+        <span class="windinfo"> wind: 4 km / h </span>
+        <span class="uvindexinfo"> uv-index: low </span>
+      </div>
+      <br />
+      <p class="currenttemp">  current temperature: <span id= "actual-temperature"> 12 </span> <a href = "#" id="celsius-link"> °C </a>| <a href = "#" id="fahrenheit-link"> °F </a> </p>
+      
+      <div class="row">
+        <div class="col-6">
+          <img src="images/staticcloud.svg" class="mainimagecloude" />
+        </div>
+        <div class="col-6" >
+          <div class="card" style="width:18rem">
+            <div class="card-body">
+              <p class="introfacts">Did you know?</p> 
+               <div class="factquote"> In some places, it snows pink.</div> 
+              <button class="next-button">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="forecastrow">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="card" style="width: 5rem;">
+                <div class="card-body-forecast">
+                    <img src="images/staticcloud.svg" class="card-img-bottom" alt="..." />
+                  <h6 class="card-titles-weekday">Mon.</h6>
+                  <p class="card-temperature">12° cloudy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 5rem;">
+                <div class="card-body-forecast">
+                    <img src="images/staticcloud.svg" class="card-img-bottom" alt="..." />
+                  <h6 class="card-titles-weekday">Tue.</h6>
+                  <p class="card-temperature">12° cloudy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 5rem;" >            
+                <div class="card-body-forecast">
+                    <img src="images/staticcloud.svg" class="card-img-bottom" alt="..." />
+                  <h6 class="card-titles-weekday">Wed.</h6>
+                  <p class="card-temperature">12° cloudy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 5rem;" >          
+                <div class="card-body-forecast">
+                    <img src="images/staticcloud.svg" class="card-img-bottom" alt="..." />
+                  <h6 class="card-titles-weekday">Thur.</h6>
+                  <p class="card-temperature">12° cloudy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 5rem;" >           
+                <div class="card-body-forecast">
+                    <img src="images/staticcloud.svg" class="card-img-bottom" alt="..." />
+                  <h6 class="card-titles-weekday">Fri.</h6>
+                  <p class="card-temperature">12° cloudy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 5rem;" >
+              <div class="card-body-forecast">
+                  <img src="images/staticcloud.svg" class="card-img-bottom" alt="..." />
+                <h6 class="card-titles-weekday">Sat.</h6>
+                <p class="card-temperature">12° cloudy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
