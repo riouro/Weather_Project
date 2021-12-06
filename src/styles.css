@@ -1,8 +1,4 @@
-body {
-  margin: 10px 300px;
-}
-
-h3 {
+h1 {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -24,26 +20,10 @@ a {
 }
 span.date {
   margin-left: 30px;
-  margin-right: 30px;
 }
 
 span.time {
   margin-left: 30px;
-  margin: 30px;
-}
-
-span.windinfo {
-  margin-left: 157px;
-}
-span.feelsinfo {
-  margin-left: 63px;
-}
-span.humidityinfo {
-  margin-left: 131px;
-}
-
-span.uvindexinfo {
-  margin-left: 154px;
 }
 
 p.introfacts {
@@ -66,18 +46,12 @@ div.card {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 
-.container {
-  border: 3px solid white;
-  border-radius: 12px;
-  font-family: "Architects Daughter";
-  color: white;
-  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-}
-.currenttemp {
+h2.currenttemp {
   padding: -5px;
-  padding-top: 10px;
+  padding-top: 25px;
   margin-left: 30px;
-  font-weight: bolder;
+  font-weight: 500px;
+  line-height: 1;
   font-size: larger;
 }
 .enterlocationbutton {
@@ -141,4 +115,14 @@ div.card {
   margin-bottom: 25px;
   margin-right: 30px;
   margin-top: 20px;
+}
+.wrapper {
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 700px;
+  border: 3px solid white;
+  border-radius: 12px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }

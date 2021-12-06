@@ -11,13 +11,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel = "stylesheet" href="src/styles.css"/>
 </head>
 <body>
     <body>
     <div class="container">
+      <div class="wrapper"> 
       <form id="location-form">
         <input
           type="text"
@@ -33,20 +34,20 @@
         </button>
       </form>
 <br>
-      <h3 id="city-name">Stuttgart, Germany</h3>
-      <div>
-        <span class="date" id=currentDate>Sun., August 21st</span>
-        <span class="feelsinfo"> feels like: 11 °C | °F </span> 
-        <span class="humidityinfo"> humidity: 40 % </span> 
+      <h1 id="city-name">Stuttgart, Germany</h1>
+      <div class="row">
+        <div class="col-4"><span class="date" id=currentDate>Sun., August 21st</span></div>
+        <div class="col-4"><span class="feelsinfo"> feels like: 11 °C | °F </span></div> 
+        <div class="col-4"><span class="humidityinfo"> humidity: 40 % </span></div> 
       </div>
-      <div>
-        <span class="time" id=currentTime>19:01</span>
-        <span class="windinfo"> wind: 4 km / h </span>
-        <span class="uvindexinfo"> uv-index: low </span>
+      <div class="row">
+        <div class="col-4"><span class="time" id=currentTime>19:01</span></div>
+        <div class="col-4"><span class="windinfo"> wind: 4 km / h </span></div>
+        <div class="col-4"><span class="uvindexinfo"> uv-index: low </span></div>
       </div>
       <br />
-      <p class="currenttemp">  current temperature: <span id= "actual-temperature"> 12 </span> <a href = "#" id="celsius-link"> °C </a>| <a href = "#" id="fahrenheit-link"> °F </a> </p>
-      
+      <h2 class="currenttemp">  current temperature: <span id= "actual-temperature"> 12 </span> <a href = "#" id="celsius-link"> °C </a>| <a href = "#" id="fahrenheit-link"> °F </a> </h2>
+      <br>
       <div class="row">
         <div class="col-6">
           <img src="images/staticcloud.svg" class="mainimagecloude" />
@@ -122,6 +123,7 @@
         </div>
       </div>
     </div>
+  </div>
     <a href =https://github.com/riouro/Weather_Project target="blank"> Open-source code</a> - by Richalah Ouro-Gnozi
     <script src="src/script.js"></script>
 </body>
