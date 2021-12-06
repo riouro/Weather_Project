@@ -33,8 +33,8 @@ dateFormat();
 
 function showLocation(response) {
   let citySearch = response.data.name;
-  let h3 = document.querySelector("#city-name");
-  h3.innerHTML = `${citySearch}`;
+  let h1 = document.querySelector("#city-name");
+  h1.innerHTML = `${citySearch}`;
 
   let actualTemp = Math.round(response.data.main.temp);
   let tempShown = document.querySelector("#actual-temperature");

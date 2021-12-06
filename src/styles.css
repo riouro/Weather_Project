@@ -15,6 +15,10 @@ form {
   margin-right: 30px;
 }
 
+small {
+  margin-left: 213px;
+}
+
 a {
   color: darkblue;
 }
@@ -90,7 +94,7 @@ h2.currenttemp {
   margin-right: 70px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 110px;
+  width: 130px;
   padding-bottom: 15px;
 }
 
