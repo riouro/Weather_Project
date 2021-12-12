@@ -32,6 +32,8 @@ function dateFormat() {
 dateFormat();
 
 function showLocation(response) {
+  console.log(response.data);
+
   let citySearch = response.data.name;
   let h1 = document.querySelector("#city-name");
   h1.innerHTML = `${citySearch}`;
@@ -39,6 +41,18 @@ function showLocation(response) {
   let actualTemp = Math.round(response.data.main.temp);
   let tempShown = document.querySelector("#actual-temperature");
   tempShown.innerHTML = `${actualTemp}`;
+
+  let wDescription = document.querySelector("#weather-description");
+  wDescription.innerHTML = response.data.weather[0].main;
+
+  let humidityDescript = document.querySelector("#humidity");
+  humidityDescript.innerHTML = response.data.main.humidity;
+
+  let windSpeed = document.querySelector("#wind");
+  windSpeed.innerHTML = Math.round(response.data.wind.speed);
+
+  let feelsLike = document.querySelector("#feels-like");
+  feelsLike.innerHTML = Math.round(response.data.main.feels_like);
 }
 
 function showResults(position) {
