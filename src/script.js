@@ -55,14 +55,20 @@ function showLocation(response) {
   feelsLike.innerHTML = Math.round(response.data.main.feels_like);
 }
 
-function showResults(position) {
-  position.preventDefault();
-  let city = document.querySelector("#text-input").value;
+function search(city) {
   let untis = "metric";
   let appid = "ad3c20dfab625c21a27f1d4566b62148";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${untis}&appid=${appid}`;
   axios.get(url).then(showLocation);
 }
 
+function handleSubmit(position) {
+  position.preventDefault();
+  let city = document.querySelector("#text-input").value;
+  search(city);
+}
+
 let form = document.querySelector("#location-form");
-form.addEventListener("submit", showResults);
+form.addEventListener("submit", handleSubmit);
+
+search("Berlin");
