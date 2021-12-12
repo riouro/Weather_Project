@@ -22,7 +22,7 @@
       <form id="location-form">
         <input
           type="text"
-          placeholder="Enter city name"
+          placeholder="Enter City Name"
           autocomplete="off"
           autofocus="on"
           class="enterlocationbutton"
@@ -30,21 +30,23 @@
         />
         <input type="submit" value="search" class="searchbutton" />
         <button type="button" class="currentlocationbutton">
-          current Location
+          Current Location
         </button>
       </form>
 <br>
       <h1 id="city-name"></h1>
       <div class="row">
         <div class="col-4"><span class="date" id=currentDate></span></div>
-        <div class="col-4"><span class="feelsinfo"> feels like: <span id="feels-like"></span> °C | °F </span></div> 
-        <div class="col-4"><span class="humidityinfo"> humidity: <span id="humidity"> </span> % </span></div> 
+        <div class="col-4"><span class="feelsinfo"> Feels Like:  <span id="feels-like"></span>  °C  |  °F  </span></div> 
+        <div class="col-4"><span class="humidityinfo"> Humidity:  <span id="humidity"> </span>  %  </span></div> 
       </div>
       <div class="row">
         <div class="col-4"><span class="time" id=currentTime></span></div>
-        <div class="col-4"><span class="windinfo"> <span id="wind"> </span> km / h </span></div>
+        <div class="col-4"><span class="windinfo"> <span id="wind"> </span>  km / h </span></div>
       </div>
-      <h2 class="currenttemp"><span id="weather-description" ></span> <span id= "actual-temperature"> </span> <a href = "#" id="fahrenheit-link"> °C  </a> | <a href = "#" id="fahrenheit-link"> °F </a> </h2>
+
+      <span class="currenttemp" > <span id= "actual-temperature"> </span> <a href = "#" class="cLink" id="celcius-link"> °C </a> |<a href = "#" class="fLink" id="fahrenheit-link">°F</a></span>
+      <div class="weatherDescription"><span id="weather-description" ></span></div> 
       <br>
       <div class="row">
         <div class="col-6">

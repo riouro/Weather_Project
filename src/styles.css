@@ -28,6 +28,7 @@ span.date {
 
 span.time {
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 p.introfacts {
@@ -50,14 +51,27 @@ div.card {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 
-h2.currenttemp {
-  padding: -5px;
-  padding-top: 25px;
+span.currenttemp {
+  display: inline-block;
   margin-left: 30px;
-  font-weight: 500px;
-  line-height: 1;
-  font-size: larger;
+  margin-top: 10px;
+  font-size: 50px;
 }
+
+.cLink {
+  font-size: medium;
+}
+
+.fLink {
+  font-size: medium;
+}
+
+.weatherDescription {
+  margin-left: 30px;
+  font-size: larger;
+  margin-top: -10px;
+}
+
 .enterlocationbutton {
   border-radius: 4px;
   border: 1px solid white;
@@ -92,7 +106,7 @@ h2.currenttemp {
 .mainimagecloude {
   margin-left: 100px;
   margin-right: 70px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   width: 130px;
   padding-bottom: 15px;
