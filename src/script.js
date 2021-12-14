@@ -43,7 +43,7 @@ function showLocation(response) {
   tempShown.innerHTML = `${actualTemp}`;
 
   let wDescription = document.querySelector("#weather-description");
-  wDescription.innerHTML = response.data.weather[0].main;
+  wDescription.innerHTML = response.data.weather[0].description;
 
   let humidityDescript = document.querySelector("#humidity");
   humidityDescript.innerHTML = response.data.main.humidity;
@@ -59,6 +59,7 @@ function showLocation(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  weatherImage.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
