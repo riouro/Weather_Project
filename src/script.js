@@ -60,6 +60,8 @@ function showLocation(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherImage.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemp = response.data.main.temp;
 }
 
 function search(city) {
@@ -75,7 +77,28 @@ function handleSubmit(position) {
   search(city);
 }
 
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let shownTemp = document.querySelector("#actual-temperature");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  shownTemp.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let shownTemp = document.querySelector("#actual-temperature");
+  shownTemp.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
 let form = document.querySelector("#location-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitTemp = document.querySelector("#fahrenheit-link");
+fahrenheitTemp.addEventListener("click", displayFahrenheit);
+
+let celsiusTemperature = document.querySelector("#celsius-link");
+celsiusTemperature.addEventListener("click", displayCelsius);
 
 search("Berlin");
