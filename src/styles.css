@@ -4,9 +4,6 @@ h1 {
   margin-bottom: 20px;
   font-size: xx-large;
 }
-h6.card-title {
-  font-size: x-small;
-}
 
 form {
   margin-top: 25px;
@@ -33,17 +30,27 @@ span.time {
 
 p.introfacts {
   margin-bottom: 5px;
-  font-weight: bolder;
+  font-weight: 1000;
+  font-size: 14px;
 }
 
 div.factquote {
   margin-bottom: 20px;
+  font-size: small;
+  line-height: 1;
 }
 div.card-body-forecast {
   margin: -2px;
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   border: 2px solid white;
   border-radius: 5px;
+}
+
+span.card-titles-weekday {
+  margin-top: 3px;
+  margin-bottom: -5px;
+  display: block;
+  font-size: 13px;
 }
 
 div.card {
@@ -121,10 +128,10 @@ span.currenttemp {
   border-radius: 4px;
   border: 1px solid white;
   background-color: white;
-  padding-left: 7px;
-  padding-right: 7px;
-  margin-bottom: 5px;
-  font-size: smaller;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: -2px;
+  font-size: 12px;
   color: #13547a;
 }
 
