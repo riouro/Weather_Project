@@ -31,6 +31,28 @@ function dateFormat() {
 }
 dateFormat();
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let weekdays = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  weekdays.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-sm-2">
+      <div class="card" style="width: 5rem;">
+       <div class="card-body-forecast">
+        <span class="card-titles-weekday">${day}</span>
+        <img src="images/twoclouds.png" class="card-img-bottom" alt="..." />
+        <p class="card-temperature"> <span class="forecast-temp-max" >15°</span> <span class="forecast-temp-min">12°</span> </p>
+       </div>
+      </div>
+     </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`; //closing the row;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showLocation(response) {
   console.log(response.data);
 
@@ -101,4 +123,5 @@ fahrenheitTemp.addEventListener("click", displayFahrenheit);
 let celsiusTemperature = document.querySelector("#celsius-link");
 celsiusTemperature.addEventListener("click", displayCelsius);
 
+displayForecast();
 search("Berlin");
