@@ -13,7 +13,7 @@ form {
 }
 
 small {
-  margin-left: 213px;
+  margin-left: 125px;
 }
 
 a {
@@ -70,32 +70,8 @@ span.currenttemp {
   color: white;
   text-decoration: none;
   position: relative;
-  top: -30px;
+  top: -35px;
   font-weight: bold;
-}
-
-.cLink:hover {
-  cursor: default;
-  color: blue;
-}
-
-.fLink {
-  font-size: medium;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  top: -30px;
-  font-weight: bold;
-}
-
-.fLink:hover {
-  cursor: default;
-  color: blue;
-}
-
-.middleLine {
-  position: relative;
-  top: -30px;
 }
 
 .weatherDescription {
@@ -175,4 +151,5 @@ span.currenttemp {
   font-family: "Roboto", sans-serif;
   color: white;
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  margin-bottom: -3px;
 }
