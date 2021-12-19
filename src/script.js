@@ -134,7 +134,37 @@ function displayCelsius(event) {
   shownTemp.innerHTML = Math.round(celsiusTemp);
 }
 
+let quotes = [
+  `You can tell the temperature by counting a cricket\'s chirps.`,
+  `The snowiest ☃️ city on Earth is Aomari, Japan, with an average of eight meters of snow each year.`,
+  `Cirrus clouds are made of ice crystals.`,
+  `Mild autumn 🍂 weather often means bigger spiders in our homes 😱.`,
+  `Lightning often follows a volcanic eruption ⚡️ 🌋.`,
+  `Some frogs 🐸 are noisier right before it rains.`,
+  `Every second, about 100 lightning bolts strike the Earth.`,
+  `The first weekly weather forecast was printed in the London Times, in 1861. `,
+  `To convert Celsius temperature reading to Fahrenheit, multiply by 1.8 and add 32.`,
+  `The three most common type of rain clouds are cirrus, cumulus and stratus clouds.`,
+  `The visible arch of a rainbow is always 42° 🌈.`,
+  `There are nine common types of rainbows e.g. primary rainbow, full circle rainbow, monochrome rainbow or fogbow.`,
+  `A full-circle rainbow is viewable from an aircraft and lets you see the full shape of rainbow.`,
+  `Acid rain, termed by Robert Augus Smith in 1952, is rain with a low pH-level.`,
+  `Rain is a key component in the Earth\'s water cyle.`,
+  `Fog forms when the dew point and air temperature difference is less than 2.5°C (4°F)`,
+];
+
+function displayFact(event) {
+  event.preventDefault();
+
+  let factGenerator = Math.floor(Math.random() * quotes.length);
+  let facts = document.querySelector("#display-fact");
+  facts.innerHTML = `${quotes[factGenerator]}`;
+}
+
 let form = document.querySelector("#location-form");
 form.addEventListener("submit", handleSubmit);
+
+let button = document.querySelector("#next-fact-button");
+button.addEventListener("click", displayFact);
 
 search("Berlin");
