@@ -115,23 +115,30 @@ function showLocation(response) {
   getCoordinates(response.data.coord);
 }
 
-function search(city) {
+function searchCityName(city) {
   let untis = "metric";
   let appid = "ad3c20dfab625c21a27f1d4566b62148";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${untis}&appid=${appid}`;
+
   axios.get(url).then(showLocation);
 }
 
 function handleSubmit(position) {
   position.preventDefault();
   let city = document.querySelector("#text-input").value;
-  search(city);
+  searchCityName(city);
 }
 
-function displayCelsius(event) {
+function getLocation(position) {
+  let appid = "ad3c20dfab625c21a27f1d4566b62148";
+  let untis = "metric";
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=${untis}&appid=${appid}`;
+  axios.get(url).then(showLocation);
+}
+
+function displayCurrentLocation(event) {
   event.preventDefault();
-  let shownTemp = document.querySelector("#actual-temperature");
-  shownTemp.innerHTML = Math.round(celsiusTemp);
+  navigator.geolocation.getCurrentPosition(getLocation);
 }
 
 let quotes = [
@@ -164,7 +171,10 @@ function displayFact(event) {
 let form = document.querySelector("#location-form");
 form.addEventListener("submit", handleSubmit);
 
+let locationButton = document.querySelector("#current-location-button");
+locationButton.addEventListener("click", displayCurrentLocation);
+
 let button = document.querySelector("#next-fact-button");
 button.addEventListener("click", displayFact);
 
-search("Berlin");
+searchCityName("Berlin");
